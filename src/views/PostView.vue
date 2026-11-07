@@ -129,7 +129,7 @@ usePageTitle(() => post.value?.title || '文章未找到')
 
   <NotFoundPanel
     v-else
-    title="没有找到这篇文章"
+    title="沒有找到這篇文章"
     description="也许链接不完整，或者这篇文章已经被移走了。"
   />
 </template>
