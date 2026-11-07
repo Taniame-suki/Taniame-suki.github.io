@@ -1,0 +1,5 @@
+# pnpm 11 默认不执行依赖的安装脚本，以降低供应链风险。
+# Vite 的构建依赖 esbuild，需要运行 postinstall 准备平台二进制。
+# 这里只放行 esbuild；其他依赖仍然保持“不执行安装脚本”。
+allowBuilds:
+  esbuild: true
