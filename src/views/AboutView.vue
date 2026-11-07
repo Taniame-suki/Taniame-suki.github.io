@@ -15,7 +15,7 @@ usePageTitle('关于')
         <h1>你好，<br />我是 {{ site.name }}。</h1>
         <p class="lede">
           一个在代码和文字之间来回走动的人。
-          这里是我留给自己的安静角落。
+          這裏是我留給自己的安靜角落。
         </p>
         <p class="about-intro__meta">
           {{ site.location }} · 自 {{ site.startYear }} 年开始记录
@@ -33,34 +33,33 @@ usePageTitle('关于')
       <div class="about-main">
         <section class="about-section">
           <p class="section__index">01 / WRITING</p>
-          <h2>我在写什么</h2>
+          <h2>我在寫什么</h2>
           <div class="prose">
             <p>
-              我主要记录三件事：做东西时遇到的问题、读完一本书之后留下的想法，
-              以及日常生活里那些微小但不想忘记的瞬间。
+              我也不知道，應該是想和別人的内容吧
             </p>
             <p>
-              这些文字大多不是教程，也不追求完整。它们更像草稿纸上的批注，
-              写给未来的自己，也顺便留给偶然路过的你。
+              這些文字并非教程，亦非人生建議，
+              寫給未來的我，也順便給路過的你。
             </p>
           </div>
         </section>
 
         <section class="about-section">
           <p class="section__index">02 / THE SITE</p>
-          <h2>这个网站</h2>
+          <h2>這個網站</h2>
           <div class="prose">
             <p>
-              网站使用 Vue 3 与 Vite 构建，文章存放在 Markdown 文件里。
-              没有后台、没有统计脚本，也不会追踪访客。它只是一个静态页面，
-              安静地待在这里。
+              網站使用的引擎你也不會感興趣吧
+              沒有後臺、訪客統計或是IP追蹤，它只是一个静态页面，
+              安靜地待在这里。
             </p>
             <p>
               如果你也喜欢简单的东西，欢迎从
               <RouterLink :to="{ name: 'columns' }">专栏</RouterLink>
               或
               <RouterLink :to="{ name: 'archive' }">归档</RouterLink>
-              开始逛一逛。
+              開始逛一逛。
             </p>
           </div>
 
@@ -70,7 +69,7 @@ usePageTitle('关于')
               <dd>Vue 3 · Vite · Markdown</dd>
             </div>
             <div>
-              <dt>写作</dt>
+              <dt>寫作</dt>
               <dd>{{ posts.length }} 篇文章，持续更新中</dd>
             </div>
             <div>
@@ -86,15 +85,15 @@ usePageTitle('关于')
           <ul class="preference-list">
             <li>
               <span class="preference-list__label">写作</span>
-              <p>先写完，再改好。允许草稿不完美。</p>
+              <p>能寫完就不錯了吧......允许草稿不完美，卻無法容忍自己的無知與錯誤。</p>
             </li>
             <li>
               <span class="preference-list__label">阅读</span>
-              <p>小说、随笔、传记，偶尔重读一本旧书。</p>
+              <p></p>
             </li>
             <li>
               <span class="preference-list__label">日常</span>
-              <p>散步、咖啡，以及没有目的的下午。</p>
+              <p>奶茶、咖啡，以及漫無目的下午。</p>
             </li>
           </ul>
         </section>
@@ -114,7 +113,7 @@ usePageTitle('关于')
               <dd>{{ site.location }}</dd>
             </div>
             <div>
-              <dt>开始记录</dt>
+              <dt>開始記錄</dt>
               <dd>{{ site.startYear }}</dd>
             </div>
             <div>

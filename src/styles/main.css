@@ -4,7 +4,7 @@
    通过排版、细线和留白建立层次，而不是依赖高饱和色或复杂动效。
    ========================================================================== */
 :root {
-  --font-serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif SC",
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif JP",
     "Songti SC", STSong, SimSun, serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;

@@ -41,18 +41,18 @@ const issueNumber = String(posts.length).padStart(2, '0')
 
           <!-- 首页主标题：想换文案时直接改这里。 -->
           <h1 class="hero__title">
-            把走过的路，<br />
-            <span>写成可以重读的字。</span>
+            把走過的路，<br />
+            <span>寫成可以重讀的字。</span>
           </h1>
 
           <p class="hero__intro">{{ site.intro }}</p>
 
           <div class="hero__actions">
             <RouterLink class="button-link" :to="{ name: 'columns' }">
-              按专栏浏览 <span aria-hidden="true">→</span>
+              按專欄瀏覽 <span aria-hidden="true">→</span>
             </RouterLink>
             <RouterLink class="text-link" :to="{ name: 'about' }">
-              关于我 <span aria-hidden="true">↗</span>
+              關於我 <span aria-hidden="true">↗</span>
             </RouterLink>
           </div>
 
