@@ -8,7 +8,7 @@
 const email = 'entropyatunievrse@gmail.com' // TODO: 替换成你的常用邮箱
 
 export const site = {
-  monogram: 'T',
+  monogram: '✿',
   name: 'Taniame',
   title: 'Taniame',
   tagline: '个人笔记',
