@@ -66,7 +66,7 @@ const issueNumber = String(posts.length).padStart(2, '0')
               <dd>{{ posts.length }} 篇</dd>
             </div>
             <div>
-              <dt>专栏</dt>
+              <dt>專欄</dt>
               <dd>{{ columns.length }} 个</dd>
             </div>
           </dl>
@@ -94,13 +94,13 @@ const issueNumber = String(posts.length).padStart(2, '0')
             <h2 class="latest-card__title">{{ featuredPost.title }}</h2>
             <p class="latest-card__summary">{{ featuredPost.summary }}</p>
             <span class="latest-card__more">
-              阅读全文 <span aria-hidden="true">→</span>
+              閲讀全文 <span aria-hidden="true">→</span>
             </span>
           </RouterLink>
 
           <div class="hero__latest-foot">
             <span>{{ posts.length }} 篇文字</span>
-            <span>{{ columns.length }} 个专栏</span>
+            <span>{{ columns.length }} 個專欄</span>
           </div>
         </aside>
       </div>
@@ -109,7 +109,7 @@ const issueNumber = String(posts.length).padStart(2, '0')
     <section class="now-strip" aria-labelledby="now-title">
       <div class="now-strip__head">
         <p class="eyebrow">NOW / 眼下</p>
-        <h2 id="now-title">最近常做的几件事</h2>
+        <h2 id="now-title">最近常做的幾件事</h2>
       </div>
 
       <dl class="now-list">
@@ -120,7 +120,7 @@ const issueNumber = String(posts.length).padStart(2, '0')
       </dl>
 
       <RouterLink class="text-link" :to="{ name: 'about' }">
-        关于我 <span aria-hidden="true">↗</span>
+        關於我 <span aria-hidden="true">↗</span>
       </RouterLink>
     </section>
 
@@ -128,11 +128,11 @@ const issueNumber = String(posts.length).padStart(2, '0')
       <div class="section__head">
         <div>
           <p class="section__index">01</p>
-          <h2 id="latest-title">最近写下的</h2>
+          <h2 id="latest-title">最近寫下的</h2>
         </div>
 
         <RouterLink class="text-link" :to="{ name: 'archive' }">
-          按时间浏览 <span aria-hidden="true">↗</span>
+          按時間瀏覽 <span aria-hidden="true">↗</span>
         </RouterLink>
       </div>
 
@@ -145,7 +145,7 @@ const issueNumber = String(posts.length).padStart(2, '0')
         />
       </div>
       <p v-else class="empty-panel">
-        还没有更多文章，等这里慢慢长出来。
+        還沒有更多的文章，等這裏慢慢長出來。
       </p>
     </section>
 
@@ -153,11 +153,11 @@ const issueNumber = String(posts.length).padStart(2, '0')
       <div class="section__head">
         <div>
           <p class="section__index">02</p>
-          <h2 id="columns-title">按专栏阅读</h2>
+          <h2 id="columns-title">按專欄閲讀</h2>
         </div>
 
         <RouterLink class="text-link" :to="{ name: 'columns' }">
-          全部专栏 <span aria-hidden="true">↗</span>
+          全部專欄 <span aria-hidden="true">↗</span>
         </RouterLink>
       </div>
 
@@ -171,24 +171,24 @@ const issueNumber = String(posts.length).padStart(2, '0')
           :posts="item.posts"
         />
       </div>
-      <p v-else class="empty-panel">还没有专栏，稍后再来看看。</p>
+      <p v-else class="empty-panel">還沒有專欄，改天再來看看。</p>
     </section>
 
     <section class="home-end" aria-label="页边与归档">
       <div class="home-end__quote">
-        <p class="eyebrow">NOTE / 写在页边</p>
+        <p class="eyebrow">NOTE / 寫在頁邊</p>
         <blockquote>“{{ site.quote.text }}”</blockquote>
         <cite>—— {{ site.quote.source }}</cite>
       </div>
 
       <aside class="home-end__archive">
-        <p class="eyebrow">ARCHIVE / 档案</p>
-        <h2>按时间<br />慢慢往回走</h2>
+        <p class="eyebrow">ARCHIVE / 檔案</p>
+        <h2>按時間<br />慢慢往回走</h2>
         <p class="home-end__archive-meta">
-          {{ posts.length }} 篇文字 · {{ archiveYears }} 个年份
+          {{ posts.length }} 篇文字 · {{ archiveYears }} 個年份
         </p>
         <RouterLink class="button-link" :to="{ name: 'archive' }">
-          浏览归档 <span aria-hidden="true">→</span>
+          瀏覽歸檔 <span aria-hidden="true">→</span>
         </RouterLink>
       </aside>
     </section>
