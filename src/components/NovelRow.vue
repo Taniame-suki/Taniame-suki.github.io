@@ -6,7 +6,7 @@ const props = defineProps({
   novel: { type: Object, required: true },
   index: { type: Number, default: 0 },
   count: { type: Number, default: 0 },
-  posts: { type: Array, default: () => [] },
+  chapters: { type: Array, default: () => [] },
 })
 
 const number = computed(() => String(props.index + 1).padStart(2, '0'))
@@ -34,7 +34,7 @@ const number = computed(() => String(props.index + 1).padStart(2, '0'))
         :key="chapter.slug"
         class="column-row__preview"
       >
-        {{ post.title }}
+        {{ chapter.title }}
       </span>
       <span v-if="!chapters.length" class="column-row__preview is-empty">
         等待第一篇

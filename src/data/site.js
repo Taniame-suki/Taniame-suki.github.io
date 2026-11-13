@@ -50,5 +50,5 @@ export const nav = [
   { label: '专栏', to: { name: 'columns' }, match: ['columns', 'column', 'post'] },
   { label: '归档', to: { name: 'archive' }, match: ['archive'] },
   { label: '关于', to: { name: 'about' }, match: ['about'] },
-  { label: '小说', to: { name: 'novel' }, match: ['novels', 'novel', 'chapter'] }
+  { label: '小说', to: { name: 'novels' }, match: ['novels', 'novel', 'chapter'] }
 ]

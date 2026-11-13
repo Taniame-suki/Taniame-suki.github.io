@@ -7,9 +7,8 @@ import HomeView from '@/views/HomeView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import PostView from '@/views/PostView.vue'
 import NovelView from '@/views/NovelView.vue'
-import NovesView from '@/views/NovelsView.vue'
-import ChapterView from '@views/ChapterView.vue'
-import NovelsView from '../views/NovelsView.vue'
+import ChapterView from '@/views/ChapterView.vue'
+import NovelsView from '@/views/NovelsView.vue'
 
 /**
  * 路由表。
@@ -38,14 +37,14 @@ const routes = [
   { path: '/archive', name: 'archive', component: ArchiveView },
   { path: '/about', name: 'about', component: AboutView },
   { path: '/novels', name: 'novels', component: NovelsView },
-  { 
+  {
     path: '/novels/:slug',
     name: 'novel',
     component: NovelView,
     props: true,
   },
   {
-    path:'/chapters/:novel/:slug',
+    path: '/chapters/:novel/:slug',
     name: 'chapter',
     component: ChapterView,
     props: true,
