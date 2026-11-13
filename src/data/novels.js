@@ -24,8 +24,8 @@
  */
 export const novels = [
   {
-    slug: 'tech',
-    name: '技术手记',
+    slug: 'second',
+    name: 'second',
     description: '关于代码、工具，以及把一个想法慢慢做出来的过程。',
     accent: '#a64b2a',
   },

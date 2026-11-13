@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 
 defineProps({
-  Chapter: { type: Object, required: true },
+  chapter: { type: Object, required: true },
   showNovel: { type: Boolean, default: false },
   // 首页列表位于 h2 之下，用 h3；专栏页没有中间层级，传入 h2。
   titleTag: { type: String, default: 'h3' },

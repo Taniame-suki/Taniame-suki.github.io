@@ -15,7 +15,7 @@ const number = computed(() => String(props.index + 1).padStart(2, '0'))
 <template>
   <RouterLink
     class="column-row"
-    :to="{ name: 'column', params: { slug: novel.slug } }"
+    :to="{ name: 'novel', params: { slug: novel.slug } }"
     :style="{ '--column-accent': novel.accent }"
   >
     <span class="column-row__index">{{ number }}</span>
