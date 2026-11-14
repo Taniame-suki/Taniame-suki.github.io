@@ -244,7 +244,7 @@ export function getChaptersForNovel(novelSlug) {
 }
 
 /** 按专栏和文章 slug 查找单篇文章。 */
-export function findPost(novelSlug, chapterSlug) {
+export function findChapter(novelSlug, chapterSlug) {
   return chapters.find(
     (chapter) => chapter.novelSlug === novelSlug && chapter.slug === chapterSlug,
   )
