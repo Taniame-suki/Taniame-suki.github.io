@@ -21,13 +21,13 @@ const latestNovelDate = computed(
   () => novelChapters.value[0]?.dateLabel || '—',
 )
 
-usePageTitle(() => novel.value?.name || '专栏未找到')
+usePageTitle(() => novel.value?.name || '小説未找到，那真的是我寫的嗎？')
 </script>
 
 <template>
   <div v-if="novel" class="column-page">
     <nav class="breadcrumb" aria-label="面包屑">
-      <RouterLink :to="{ name: 'novels' }">专栏</RouterLink>
+      <RouterLink :to="{ name: 'novels' }">小説</RouterLink>
       <span aria-hidden="true">/</span>
       <span>{{ novel.name }}</span>
     </nav>
@@ -35,7 +35,7 @@ usePageTitle(() => novel.value?.name || '专栏未找到')
     <header class="page-head column-page__head">
       <div class="column-page__grid">
         <div>
-          <p class="eyebrow">{{ novelNumber }} / COLUMN</p>
+          <p class="eyebrow">{{ novelNumber }} / NOVEL</p>
 
           <div class="column-heading">
             <span
@@ -69,17 +69,17 @@ usePageTitle(() => novel.value?.name || '专栏未找到')
     </div>
 
     <p v-else class="empty-panel">
-      这个专栏还在生长，暂时没有文章。
+      這個小説還在寫，還未發佈。
     </p>
 
     <RouterLink class="back-link" :to="{ name: 'novels' }">
-      ← 返回全部专栏
+      ← 返回全部小説
     </RouterLink>
   </div>
 
   <NotFoundPanel
     v-else
-    title="没有找到这个专栏"
-    description="它可能已经改名，或者还没有被创建。"
+    title="沒有找到這部小説"
+    description="它可能已經改名了，或者沒寫 / 發佈。"
   />
 </template>

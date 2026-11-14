@@ -23,18 +23,7 @@
  * 示例配置（发布前可以按自己的需要全部改写）：
  */
 export const novels = [
-  {
-    slug: 'second',
-    name: 'second',
-    description: '关于代码、工具，以及把一个想法慢慢做出来的过程。',
-    accent: '#a64b2a',
-  },
-  {
-    slug: 'first',
-    name: 'first',
-    description: '关于代码、工具，以及把一个想法慢慢做出来的过程。',
-    accent: '#a64b2a',
-  }
+  
 ]
 
 /** 按 slug 查找专栏，找不到时返回 undefined。 */
