@@ -25,7 +25,7 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
 <template>
   <article v-if="chapter" class="article">
     <nav class="breadcrumb" aria-label="面包屑">
-      <RouterLink :to="{ name: 'novels' }">专栏</RouterLink>
+      <RouterLink :to="{ name: 'novels' }">小説</RouterLink>
       <span aria-hidden="true">/</span>
       <RouterLink
         v-if="novel"
@@ -51,13 +51,13 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
         <span aria-hidden="true">·</span>
         <time :datetime="chapter.date">{{ chapter.dateLabel }}</time>
         <span aria-hidden="true">·</span>
-        <span>{{ chapter.readingTime }} 分钟阅读</span>
+        <span>{{ chapter.readingTime }} 分鐘閲讀</span>
       </div>
 
       <h1 class="article__title">{{ chapter.title }}</h1>
       <p class="article__summary">{{ chapter.summary }}</p>
 
-      <ul v-if="chapter.tags.length" class="tag-list" aria-label="文章标签">
+      <ul v-if="chapter.tags.length" class="tag-list" aria-label="文章標簽">
         <li v-for="tag in chapter.tags" :key="tag" class="tag">{{ tag }}</li>
       </ul>
     </header>
@@ -78,11 +78,11 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
         <p class="eyebrow">WRITTEN BY</p>
         <p class="article-author__name">{{ site.author }}</p>
         <p class="article-author__meta">
-          写于 {{ chapter.dateLabel }} · {{ chapter.readingTime }} 分钟阅读
+          寫於 {{ chapter.dateLabel }} · {{ chapter.readingTime }} 分鐘閲讀
         </p>
       </div>
       <RouterLink class="text-link" :to="{ name: 'about' }">
-        关于我 <span aria-hidden="true">↗</span>
+        關於我 <span aria-hidden="true">↗</span>
       </RouterLink>
     </div>
 
@@ -98,7 +98,7 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
       <nav
         v-if="neighbors.older || neighbors.newer"
         class="article-nav"
-        aria-label="同专栏文章"
+        aria-label="同小説文章"
       >
         <RouterLink
           v-if="neighbors.older"
@@ -120,7 +120,7 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
             params: { chapter: neighbors.newer.novelSlug, slug: neighbors.newer.slug },
           }"
         >
-          <span class="article-nav__label">较新一篇 →</span>
+          <span class="article-nav__label">較新一篇 →</span>
           <span class="article-nav__title">{{ neighbors.newer.title }}</span>
         </RouterLink>
       </nav>
@@ -130,6 +130,6 @@ usePageTitle(() => chapter.value?.title || '文章未找到')
   <NotFoundPanel
     v-else
     title="沒有找到這篇文章"
-    description="也许链接不完整，或者这篇文章已经被移走了。"
+    description="也許鏈接不完整，或者這篇文章已經被移走了。"
   />
 </template>

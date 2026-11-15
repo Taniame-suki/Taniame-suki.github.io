@@ -66,7 +66,7 @@ const NovelRows = novels.map((novel, index) => {
       </div>
 
       <RouterLink class="button-link" :to="{ name: 'archive' }">
-        打开歸檔 <span aria-hidden="true">→</span>
+        打開歸檔 <span aria-hidden="true">→</span>
       </RouterLink>
     </section>
   </div>

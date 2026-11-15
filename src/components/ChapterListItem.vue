@@ -30,7 +30,7 @@ defineProps({
       </component>
 
       <p class="post-row__summary">{{ chapter.summary }}</p>
-      <p class="post-row__meta">{{ chapter.readingTime }} 分钟阅读</p>
+      <p class="post-row__meta">{{ chapter.readingTime }} 分鐘閲讀</p>
     </div>
 
     <span class="post-row__arrow" aria-hidden="true">↗</span>
